@@ -12,3 +12,12 @@
   font-size: 0.8rem;
   color: var(--back_ClearGrey);
 }
+
+
+@media screen and (max-width: 700px){
+
+  .mundo h1, h4 {
+    font-size: 0.6rem;
+  } 
+
+}

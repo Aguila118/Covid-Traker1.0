@@ -69,14 +69,19 @@ nav {
   .Covid, .Sud {
     height: 100%;
     font-size: 1em;
-    min-width: 90px;
+    min-width: 80px;
   }
 }
 
 @media screen and (max-width:700px) {
+
+  .Covid {
+    width: 40px;
+  }
+
   nav {
     flex-direction: column;
-    height: 330px;
+    height: 400px;
   }
   
   .nav-links{

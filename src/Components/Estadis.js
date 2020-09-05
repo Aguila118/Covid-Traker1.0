@@ -12,7 +12,7 @@ export const Estadis = ({ datos, pais }) => {
     return (
       <>
         <div className="wrapperTasas">
-          <h5 className="TituloTasas">Tasa Muertes:</h5>
+          <h5 className="TituloTasas">Tasa Fallecidos:</h5>
           <h5 className="numeromuerte">{tasaMuertes.toFixed(2)}</h5>
         </div>
         <div className="wrapperTasas">
