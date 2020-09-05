@@ -1,0 +1,56 @@
+
+
+.Estadisticas {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 360px;
+  height: 450px;
+  background: var(--back_Pink);
+  border: 1px solid var(--back_DarkGrey);
+  color: var(--back_ClearGrey);
+}
+
+.Estadisticas h3 {
+  margin-left: 10px;
+  font-size: 1.3em;
+}
+
+.WrapperEstad {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.wrapperTasas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  width: 150px;
+  height: 100px;
+  background: var(--back_ClearGrey);
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.TituloTasas{
+  position: absolute;
+  width: 140px;
+  color: var(--back_Pink);
+  font-size: 1em;
+}
+
+.numeromuerte {
+  margin-top: 55px;
+  margin-left: 80px;
+  text-align: center;
+  background: var(--back_Pink);
+  color: var(--back_DarkGrey);
+  font-size: 1.5em;
+  padding: 2px 4px;
+  border-radius: 10px;
+}

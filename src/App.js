@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+import Nav from './Components/Nav'
+import PaisesDeAmerica from './Components/PaisesDeAmerica';
+import { DatosMundo } from './Components/DatosMundo';
+import { useFetchData } from './hooks/useFetchData'
+import Spinner from './Components/Spinner'
+
+
+const App = () => {
+
+  const { data: datos, Loading } = useFetchData();
+  const [pais, setpais] = useState(6)
+
+
+  return Loading ? (<Spinner />) :
+    (
+      <>
+        <Nav setpais={setpais} pais={pais} />
+        <DatosMundo datos={datos} />
+        <PaisesDeAmerica datos={datos} pais={pais} />
+      </>
+    );
+};
+
+export default App;
