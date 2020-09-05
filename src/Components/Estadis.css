@@ -14,14 +14,13 @@
 }
 
 .Estadisticas h3 {
-  margin-left: 10px;
   font-size: 1.3em;
 }
 
 .WrapperEstad {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 4px;
 }
 
 .wrapperTasas {
@@ -29,10 +28,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start; 
-  width: 150px;
+  width: 145px;
   height: 100px;
   background: var(--back_ClearGrey);
-  margin-left: 10px;
+  margin-left: 0px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -46,7 +45,7 @@
 
 .numeromuerte {
   margin-top: 55px;
-  margin-left: 80px;
+  margin-left: 75px;
   text-align: center;
   background: var(--back_Pink);
   color: var(--back_DarkGrey);
