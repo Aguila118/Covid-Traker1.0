@@ -9,39 +9,40 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  background: var(--back_ClearGrey);
 }
 
 .Titulo {
-  width: 40vw;
-  min-width: 360px;
-  padding-left: 10px;
-  background: var(--back_ClearGrey);
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: black;
-  text-decoration: none;
 } 
 
 .Covid {
+  display: flex;
+  align-items: center;
+  height: inherit;
   font-size: 1.5em;
   color: var(--back_DarkGrey);
-  height: 100%;
 }
 
 .Sud {
+  display: flex;
+  align-items: center;
+  height: inherit;
   margin-left: 5px;
   font-size: 1.5em;
   color: var(--back_Pink);
 }
 
 .nav-links{
+  display: flex;
   height: 100%;
   width: 60%;
   padding-right: 10px;
   background: var(--back_ClearGrey);
-  display: flex;
+  
 }
 
 .Links {
@@ -62,4 +63,33 @@ nav {
   color: var(--back_ClearGrey);
   cursor: pointer;
   filter: drop-shadow(0px 0px 3px var(--back_Pink));
+}
+
+@media screen and (max-width:1000px) {
+  .Covid, .Sud {
+    height: 100%;
+    font-size: 1em;
+    min-width: 90px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  nav {
+    flex-direction: column;
+    height: 330px;
+  }
+  
+  .nav-links{
+    flex-direction: column;    
+  }
+
+  .Links {
+    height: 40px;
+  }
+
+  .Covid, .Sud {
+    height: 100%;
+    font-size: 1.5em;
+    min-width: 90px;
+  }
 }
