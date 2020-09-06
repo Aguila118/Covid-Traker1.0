@@ -4,6 +4,7 @@ import PaisesDeAmerica from './Components/PaisesDeAmerica';
 import { DatosMundo } from './Components/DatosMundo';
 import { useFetchData } from './hooks/useFetchData'
 import Spinner from './Components/Spinner'
+import { Footer } from './Components/Footer';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Nav setpais={setpais} />
         <DatosMundo datos={datos} />
         <PaisesDeAmerica datos={datos} pais={pais} />
+        <Footer />
       </>
     );
 };

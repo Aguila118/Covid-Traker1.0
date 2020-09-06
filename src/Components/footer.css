@@ -1,0 +1,11 @@
+footer {
+  width: 98vw;
+  height: 20px;
+  text-align: center;
+  background: var(--back_Pink);
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: var(--back_ClearGrey);
+}
