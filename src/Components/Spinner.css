@@ -1,12 +1,62 @@
-.spinner {
-  width: 100vw;
-  height: 50vh;
+.loader{
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-.spinner p {
+.spinner {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.spinner span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.spinner span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  transform-origin: right;
+  border-radius: 50%;
+  background: var(--back_Pink);
+  box-shadow: 0 0 10px var(--back_Pink),
+              0 0 15px var(--back_Pink),
+              0 0 35px var(--back_Pink),
+              0 0 50px var(--back_Pink),
+              0 0 65px var(--back_Pink),
+              0 0 80px var(--back_Pink);
+  animation: degree 2s linear infinite;
+
+}
+
+@keyframes degree {
+  0%{ 
+    transform: scale(1);
+    transform: rotate(0);
+    }
+  25%{transform: scale(0);}
+  50%{transform: scale(1);}
+  75%{transform: scale(0);}
+  100%{
+    transform: scale(1);
+    transform: rotate(100deg);
+  }
+}
+
+
+ p {
+  margin-top: 30px;
   font-size: 1.3rem;
   font-weight: bold;
   color: #aaaaaa;

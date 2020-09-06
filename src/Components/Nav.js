@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavButtons.css';
 
-const Nav = ({ setpais, pais }) => {
+const Nav = ({ setpais }) => {
 
 
   return (

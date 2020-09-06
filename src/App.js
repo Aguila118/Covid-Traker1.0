@@ -15,7 +15,7 @@ const App = () => {
   return Loading ? (<Spinner />) :
     (
       <>
-        <Nav setpais={setpais} pais={pais} />
+        <Nav setpais={setpais} />
         <DatosMundo datos={datos} />
         <PaisesDeAmerica datos={datos} pais={pais} />
       </>

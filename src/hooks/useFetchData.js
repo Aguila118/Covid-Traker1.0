@@ -8,6 +8,7 @@ export const useFetchData = () => {
   });
 
   useEffect(() => {
+
     GetData().then(dat => {
       setdatos({
         data: dat,
